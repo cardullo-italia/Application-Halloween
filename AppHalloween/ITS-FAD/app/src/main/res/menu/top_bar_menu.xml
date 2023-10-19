@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/modNight"
+        android:title=""
+        android:icon="@drawable/night"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/message"
+        android:title="messaggi"
+        android:iconTint="@color/white"
+        android:icon="@drawable/message_chat"
+        app:showAsAction="ifRoom"
+        />
+    <item android:id="@+id/setting"
+        android:title="setting"
+        android:iconTint="@color/white"
+        android:icon="@drawable/setting_app"
+        app:showAsAction="ifRoom"/>
+
+</menu>
