@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">App-Halloween</string>
+    <string name="citazione">“Finché ci saranno una notte buia, una luna piena di misteri e una zucca che ride, ci sarà sempre Halloween.”</string>
+    <string name="autore">CIT. Fabrizio Caramagna</string>
+    <string name="ricette_spaventose">Ricette Spaventose</string>
+    <string name="leggende_halloween">Le Leggende di Halloween</string>
+    <string name="film_halloween">Film a tema Halloween</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
