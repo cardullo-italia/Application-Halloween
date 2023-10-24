@@ -1,14 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_linear"
     tools:context=".pages.fragment_page.Homepage_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/homepage_fragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <androidx.fragment.app.FragmentContainerView
+          android:id="@+id/profilo_halloween"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="298dp"
+          android:layout_height="48dp"
+          android:fontFamily="@font/irishgrover_regular"
+          android:text="@string/citazione"
+          android:textAlignment="gravity"
+          android:textColor="@color/white"
+          android:textSize="13dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.38"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/profilo_halloween"
+          app:layout_constraintVertical_bias="0.109" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/irishgrover_regular"
+          android:text="@string/autore"
+          android:textColor="@color/white"
+          android:textSize="12dp"
+          app:layout_constraintBottom_toBottomOf="@+id/textView"
+          app:layout_constraintEnd_toEndOf="@+id/textView"
+          app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="50dp"
+          android:fontFamily="@font/irishgrover_regular"
+          android:text="@string/ricette_spaventose"
+          android:textColor="@color/white"
+          android:textSize="24dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/textView2"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+      <androidx.fragment.app.FragmentContainerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/ricette_spaventose"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView3"
+          app:layout_constraintVertical_bias="0.12" />
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/irishgrover_regular"
+          android:text="@string/film_halloween"
+          android:textColor="@color/white"
+          android:layout_marginStart="30dp"
+          android:textSize="24dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/ricette_spaventose" />
+
+      <androidx.fragment.app.FragmentContainerView
+          android:id="@+id/film_horror_halloween"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

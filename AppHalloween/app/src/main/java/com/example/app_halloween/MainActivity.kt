@@ -19,31 +19,35 @@ class MainActivity : AppCompatActivity() {
         //insert the bottom navigation
         val BottomNavigationHalloween = findViewById<BottomNavigationView>(R.id.bottomnav)
         BottomNavigationHalloween.itemActiveIndicatorColor = getColorStateList(R.color.trasparent)
-        BottomNavigationHalloween.setOnItemReselectedListener { item ->
+
+        BottomNavigationHalloween.setOnItemSelectedListener { item ->
             when(item.itemId)
             {
                 R.id.homepage -> {
                     val homepage = Homepage_Fragment()
                     supportFragmentManager
                         .beginTransaction()
-                        .add(R.id.ContainerforFragment,homepage)
+                        .replace(R.id.ContainerforFragment,homepage)
                         .commit()
+                    true
                 }
 
                 R.id.film -> {
                     val film = FilmFragment()
                     supportFragmentManager
                         .beginTransaction()
-                        .add(R.id.ContainerforFragment,film)
+                        .replace(R.id.ContainerforFragment,film)
                         .commit()
+                    true
                 }
 
                 R.id.leggende -> {
                     val leggende = LeggendeFragment()
                     supportFragmentManager
                         .beginTransaction()
-                        .add(R.id.ContainerforFragment,leggende)
+                        .replace(R.id.ContainerforFragment,leggende)
                         .commit()
+                    true
                 }
 
                 else -> false
