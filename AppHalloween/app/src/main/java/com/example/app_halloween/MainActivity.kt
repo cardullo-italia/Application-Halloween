@@ -17,10 +17,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //insert the bottom navigation
-        val BottomNavigationHalloween = findViewById<BottomNavigationView>(R.id.bottomnav)
-        BottomNavigationHalloween.itemActiveIndicatorColor = getColorStateList(R.color.trasparent)
+        val bottomNavigationHalloween = findViewById<BottomNavigationView>(R.id.bottomnav)
+        bottomNavigationHalloween.itemActiveIndicatorColor = getColorStateList(R.color.trasparent)
 
-        BottomNavigationHalloween.setOnItemSelectedListener { item ->
+        bottomNavigationHalloween.setOnItemSelectedListener { item ->
             when(item.itemId)
             {
                 R.id.homepage -> {
