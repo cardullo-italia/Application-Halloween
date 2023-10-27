@@ -30,7 +30,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="9dp"
             android:fontFamily="@font/irishgrover_regular"
-            android:text="4.5 Star"
+            android:text="ciao"
             android:textColor="@color/yellow"
             android:textSize="10dp"
             app:layout_constraintBottom_toTopOf="@+id/TitleMovie"
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/irishgrover_regular"
-            android:text="Slenderman"
+            android:text="ciao"
             android:textSize="12dp"
             android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/MovieFilm"
@@ -57,8 +57,12 @@
             android:background="@color/grey"
             app:flow_horizontalAlign="center"
             app:flow_verticalAlign="center"
-            tools:layout_editor_absoluteX="206dp"
-            tools:layout_editor_absoluteY="288dp" />
+            app:layout_constraintBottom_toTopOf="@+id/TitleMovie"
+            app:layout_constraintEnd_toEndOf="@+id/MovieFilm"
+            app:layout_constraintHorizontal_bias="0.651"
+            app:layout_constraintStart_toEndOf="@+id/TitleStar"
+            app:layout_constraintTop_toTopOf="@+id/MovieFilm"
+            app:layout_constraintVertical_bias="0.112" />
 
         <ImageView
             android:id="@+id/heart"
@@ -66,8 +70,10 @@
             android:layout_height="wrap_content"
             android:src="@drawable/heartheart"
             android:textAlignment="center"
-            tools:layout_editor_absoluteX="211dp"
-            tools:layout_editor_absoluteY="291dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/heartIcon"
+            app:layout_constraintEnd_toEndOf="@+id/heartIcon"
+            app:layout_constraintStart_toStartOf="@+id/heartIcon"
+            app:layout_constraintTop_toTopOf="@+id/heartIcon" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

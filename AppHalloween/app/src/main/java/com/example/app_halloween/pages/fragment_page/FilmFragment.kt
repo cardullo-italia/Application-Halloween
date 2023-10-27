@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.app_halloween.R
+import com.example.app_halloween.child_Page_Fragment.Film_ListGrid_Fragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,6 +35,11 @@ class FilmFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        childFragmentManager
+            .beginTransaction()
+            .replace(R.id.Film_Fragment_Halloween,Film_ListGrid_Fragment())
+            .commit()
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_film, container, false)
     }

@@ -34,6 +34,7 @@ class Film_ListGrid_Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val griglia_film =
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_film__list_grid_, container, false)
     }

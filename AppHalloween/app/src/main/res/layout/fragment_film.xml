@@ -6,4 +6,11 @@
     tools:context=".pages.fragment_page.FilmFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Film_Fragment_Halloween" />
+
 </FrameLayout>
